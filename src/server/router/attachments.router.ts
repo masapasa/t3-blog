@@ -58,6 +58,8 @@ export const attachmentsRouter = createRouter()
           message: "Error creating S3 presigned url",
         });
       }
+      console.log("attachment:", attachment);
+      console.log("url:", url);
     },
   })
   .mutation("create-presigned-avatar-url", {
